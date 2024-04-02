@@ -1,0 +1,75 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VistaParaPDF</title>
+    <style>
+        body{
+            font-family: Arial;
+        }
+
+        .tabla-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+     <center>
+        <br />
+        <img style="width: 200px" src="https://fpprofessionaleducation.tajamar.es/wp-content/uploads/2019/04/escudo-positivo.jpg" />
+        <br />
+        <h1>Lista de Alumnos</h1>
+        <br />
+        <div class="tabla-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre Alumno</th>
+                    <th>Nota</th>
+                    <th>Asignatura</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan</td>
+                    <td>8.5</td>
+                    <td>Matemáticas</td>
+                </tr>
+                <tr>
+                    <td>María</td>
+                    <td>9.2</td>
+                    <td>Ciencias</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>7.8</td>
+                    <td>Historia</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </center>
+</body>
+</html>

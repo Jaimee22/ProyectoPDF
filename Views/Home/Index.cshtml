@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <a class="btn btn-primary" asp-controller="Home" asp-action="MostrarPDFenPagina" target="_blank">Ver PDF en pagina</a>
+    <a class="btn btn-primary" asp-controller="Home" asp-action="DescargarPDF">Descargar PDF</a>
+    <br />
+    <br />
+    <embed src="@Url.Action("MostrarPDFenPagina","Home")"  width="1000" height="700" type="application/pdf"/>
+</div>
